@@ -24,11 +24,13 @@ body.dark-mode {
 }
 
 .profile-photo img {
-    width: 250px; /* Fotoğrafın boyutunu ayarlayın */
-    height: 250px; /* Fotoğrafın boyutunu ayarlayın */
+    width: 200px;   /* Fotoğrafın genişliği */
+    height: 200px;  /* Fotoğrafın yüksekliği */
+    max-width: 100%; /* Fotoğrafın genişliğini sınırla */
+    max-height: 100%; /* Fotoğrafın yüksekliğini sınırla */
     border-radius: 50%; /* Yuvarlak yapma */
-    object-fit: cover; /* Fotoğrafın düzgün şekilde yerleşmesi için */
-    border: 3px solid #ddd; /* Hafif bir kenarlık */
+    object-fit: cover; /* Fotoğrafın düzgün şekilde yerleşmesi */
+    border: 3px solid #ddd; /* Kenarlık */
 }
 
 .about-text {
