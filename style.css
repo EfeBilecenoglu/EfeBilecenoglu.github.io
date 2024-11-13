@@ -195,7 +195,13 @@ button {
     max-width: 600px;
 }
 
+.tab-pane {
+    display: none;
+}
 
+.tab-pane.active {
+    display: block;
+}
 
 
 ul {
