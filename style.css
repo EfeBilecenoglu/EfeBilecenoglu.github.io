@@ -1,62 +1,4 @@
-/* Genel Gece Modu ve Normal Modu Renk Düzenlemeleri */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-/* Gece modu renkleri */
-body.dark-mode {
-    background-color: #1a1a1a;
-    color: #f4f4f4;
-}
-
-.tab-list {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 20px;
-}
-
-/* Normal modda tab renkleri */
-.tab {
-    padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer;
-    font-weight: bold;
-    background-color: #f4f4f4;  /* açık renk arka plan */
-    color: #333;  /* koyu renk yazı */
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.tab:hover {
-    background-color: #ddd;
-}
-
-.tab.active {
-    background-color: #007bff;  /* Aktif sekme için mavi arka plan */
-    color: white;
-}
-
-/* Gece modunda tab renkleri */
-body.dark-mode .tab {
-    background-color: #333;  /* Koyu arka plan */
-    color: #f4f4f4;  /* Beyaz yazı */
-}
-
-body.dark-mode .tab:hover {
-    background-color: #555;  /* Koyu renk hover */
-}
-
-body.dark-mode .tab.active {
-    background-color: #1e90ff;  /* Gece modunda mavi renk aktif tab */
-    color: white;
-}
-
-/* Tab içerikleri */
+/* .tab-content için genel stil */
 .tab-content {
     display: flex;
     flex-direction: column;
@@ -70,46 +12,35 @@ body.dark-mode .tab.active {
 
 /* Gece Modu İçin .tab-content */
 body.dark-mode .tab-content {
-    background-color: #1a1a1a;  /* Koyu gri arka plan */
-    color: #f4f4f4;  /* Açık renk metin (beyaz) */
+    background-color: #1a1a1a;  /* Gece modunda koyu arka plan */
+    color: #f4f4f4;  /* Beyaz metin */
 }
 
+/* Gece Modu Liste Elemanları */
 body.dark-mode .tab-content ul li {
-    color: #f4f4f4;  /* Gece modunda liste elemanlarını beyaz yap */
+    background-color: #333;  /* Liste öğelerinin arka planını koyu yap */
+    color: #f4f4f4;  /* Liste öğelerinin yazı rengi beyaz */
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
 }
 
+/* Gece Modu Listelerde Hover Durumu */
+body.dark-mode .tab-content ul li:hover {
+    background-color: #555;  /* Liste öğelerinin hover arka planı */
+    cursor: pointer;
+}
+
+/* Linkler için Gece Modu */
 body.dark-mode .tab-content a {
-    color: #1e90ff;  /* Linklerin mavi renkte görünmesini sağla */
+    color: #1e90ff;  /* Linkler mavi olacak */
 }
 
 body.dark-mode .tab-content a:hover {
     color: #66b3ff;  /* Link hover rengini daha açık mavi yap */
 }
 
-/* Daha iyi okuma için metin rengini beyaz, arka planı koyu yapmak */
+/* Diğer metin içerikleri için gece modunda beyaz yazı */
 body.dark-mode .tab-content p {
-    color: #f4f4f4;  /* Paragraflar beyaz olacak */
-}
-
-/* İçeriklerin görünmesi */
-.tab-pane {
-    display: none; /* Başlangıçta tüm içerikler gizli olacak */
-}
-
-.tab-pane.active {
-    display: block; /* Sadece aktif içerik görünür olacak */
-}
-
-ul {
-    padding: 0;
-    list-style-type: none;
-}
-
-ul li {
-    margin-bottom: 10px;
-    color: #333;
-}
-
-body.dark-mode ul li {
-    color: #f4f4f4;  /* Gece modunda beyaz renkli liste öğeleri */
+    color: #f4f4f4;
 }
