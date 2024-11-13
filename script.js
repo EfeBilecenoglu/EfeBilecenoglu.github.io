@@ -17,31 +17,31 @@ cvButton.addEventListener('click', () => {
     window.location.href = 'cv/Adınız_CV.pdf'; // CV dosyasının yolu
 });
 document.addEventListener("DOMContentLoaded", function() {
-    // Tablar ve içerikleri seçiyoruz
-    const tabs = document.querySelectorAll('.tab');
-    const tabPanes = document.querySelectorAll('.tab-pane');
+    const tabs = document.querySelectorAll('.tab'); // Tabları alıyoruz
+    const tabPanes = document.querySelectorAll('.tab-pane'); // İçerikleri alıyoruz
     
-    // Her bir tab'a tıklanabilirlik ekliyoruz
+    // Tab'lara tıklanabilirlik ekliyoruz
     tabs.forEach(tab => {
         tab.addEventListener('click', function() {
-            // Aktif olan tüm tab'ları ve içerikleri temizliyoruz
+            // Tüm tab'ların ve içeriklerin 'active' sınıfını kaldırıyoruz
             tabs.forEach(t => t.classList.remove('active'));
             tabPanes.forEach(pane => pane.classList.remove('active'));
 
-            // Aktif olan tab'ı ekliyoruz
+            // Aktif olan tab'ı ve içerik kısmını ekliyoruz
             tab.classList.add('active');
-
+            
             // Tab'ın data-tab özelliğini kullanarak içerik ID'sini alıyoruz
-            const contentId = tab.getAttribute('data-tab'); // data-tab'a göre içerik id'sini al
-            document.getElementById(contentId).classList.add('active');
+            const contentId = tab.getAttribute('data-tab'); // data-tab ile içerik ID'sini al
+            const activeContent = document.getElementById(contentId); // İçerik kısmını al
+            activeContent.classList.add('active'); // Aktif içerik olarak ayarla
         });
     });
 
     // Sayfa yüklendiğinde varsayılan olarak "Languages" tab'ını göster
-    const defaultTab = document.querySelector('.tab[data-tab="languages"]');
-    const defaultContent = document.getElementById('languages-content');
+    const defaultTab = document.querySelector('.tab[data-tab="languages-content"]'); // Varsayılan "Languages" sekmesi
+    const defaultContent = document.getElementById('languages-content'); // İçerik kısmı
     if (defaultTab && defaultContent) {
-        defaultTab.classList.add('active');
-        defaultContent.classList.add('active');
+        defaultTab.classList.add('active'); // "Languages" tab'ını aktif yap
+        defaultContent.classList.add('active'); // "Languages" içeriğini aktif yap
     }
 });
