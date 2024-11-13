@@ -64,17 +64,54 @@
         </div>
     </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>İletişim</h2>
-            <form action="mailto:email@example.com" method="post" enctype="text/plain">
-                <input type="text" name="name" placeholder="Adınız" required>
-                <input type="email" name="email" placeholder="E-posta" required>
-                <textarea name="message" placeholder="Mesajınız" required></textarea>
-                <button type="submit">Gönder</button>
-            </form>
+<section id="skills" class="section">
+    <div class="container">
+        <h2>Yeteneklerim</h2>
+        
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+            <ul class="tab-list">
+                <li class="tab" id="languages-tab">Languages</li>
+                <li class="tab" id="tools-tab">Tools</li>
+                <li class="tab" id="databases-tab">Databases</li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <!-- Languages Tab Content -->
+                <div class="tab-pane" id="languages-content">
+                    <ul>
+                        <li>C#</li>
+                        <li>Python</li>
+                        <li>JQL</li>
+                        <li>SQL</li>
+                        <li>T-SQL</li>
+                        <li>LINQ</li>
+                    </ul>
+                </div>
+
+                <!-- Tools Tab Content -->
+                <div class="tab-pane" id="tools-content">
+                    <ul>
+                        <li>Unity</li>
+                        <li>Microsoft Visual Studio</li>
+                        <li>JIRA</li>
+                        <li>Confluence</li>
+                        <li>GitHub</li>
+                        <li>Tortoise SVN</li>
+                    </ul>
+                </div>
+
+                <!-- Databases Tab Content -->
+                <div class="tab-pane" id="databases-content">
+                    <ul>
+                        <li>MSSQL</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <footer>
         <div class="container">
