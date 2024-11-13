@@ -24,8 +24,8 @@ body.dark-mode {
 }
 
 .profile-photo img {
-    width: 150px; /* Fotoğrafın boyutunu ayarlayın */
-    height: 150px; /* Fotoğrafın boyutunu ayarlayın */
+    width: 250px; /* Fotoğrafın boyutunu ayarlayın */
+    height: 250px; /* Fotoğrafın boyutunu ayarlayın */
     border-radius: 50%; /* Yuvarlak yapma */
     object-fit: cover; /* Fotoğrafın düzgün şekilde yerleşmesi için */
     border: 3px solid #ddd; /* Hafif bir kenarlık */
