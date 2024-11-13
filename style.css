@@ -149,7 +149,6 @@ footer {
 button {
     cursor: pointer;
 }
-
 #skills {
     margin-top: 50px;
     padding: 50px 0;
@@ -188,16 +187,61 @@ button {
     color: white;
 }
 
-/* Tab-content başlangıçta gizli */
 .tab-content {
-    display: none;  /* Tüm içerikler başlangıçta gizli */
+    display: none;
     padding: 20px;
     background-color: #f4f4f4;
     border-radius: 5px;
     width: 100%;
     max-width: 600px;
 }
-
-/* Gece modunda içerik */
 body.dark-mode .tab-content {
-    background-color: #1a1a1a; /* Koyu arka 
+    background-color: #1a1a1a;  /* Gece modunda koyu arka plan */
+    color: #f4f4f4;  /* Beyaz metin */
+}
+
+/* Gece Modu Liste Elemanları */
+body.dark-mode .tab-content ul li {
+    background-color: #333;  /* Liste öğelerinin arka planını koyu yap */
+    color: #f4f4f4;  /* Liste öğelerinin yazı rengi beyaz */
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+/* Gece Modu Listelerde Hover Durumu */
+body.dark-mode .tab-content ul li:hover {
+    background-color: #555;  /* Liste öğelerinin hover arka planı */
+    cursor: pointer;
+}
+
+/* Linkler için Gece Modu */
+body.dark-mode .tab-content a {
+    color: #1e90ff;  /* Linkler mavi olacak */
+}
+
+body.dark-mode .tab-content a:hover {
+    color: #66b3ff;  /* Link hover rengini daha açık mavi yap */
+}
+
+/* Diğer metin içerikleri için gece modunda beyaz yazı */
+body.dark-mode .tab-content p {
+    color: #f4f4f4;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
