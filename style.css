@@ -16,6 +16,25 @@ body.dark-mode {
     color: #f4f4f4;
 }
 
+/* Hakkımda bölümü */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-photo img {
+    width: 150px; /* Fotoğrafın boyutunu ayarlayın */
+    height: 150px; /* Fotoğrafın boyutunu ayarlayın */
+    border-radius: 50%; /* Yuvarlak yapma */
+    object-fit: cover; /* Fotoğrafın düzgün şekilde yerleşmesi için */
+    border: 3px solid #ddd; /* Hafif bir kenarlık */
+}
+
+.about-text {
+    flex: 1;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
