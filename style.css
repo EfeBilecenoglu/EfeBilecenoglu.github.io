@@ -12,33 +12,46 @@ body {
 }
 
 body.dark-mode {
-    background-color: #121212;
+    background-color: #1a1a1a;
     color: #f4f4f4;
 }
 
-/* Genel Container */
+/* Hakkımda bölümü */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-photo img {
+    width: 200px;   /* Fotoğrafın genişliği */
+    height: 200px;  /* Fotoğrafın yüksekliği */
+    max-width: 100%; /* Fotoğrafın genişliğini sınırla */
+    max-height: 100%; /* Fotoğrafın yüksekliğini sınırla */
+    border-radius: 50%; /* Yuvarlak yapma */
+    object-fit: cover; /* Fotoğrafın düzgün şekilde yerleşmesi */
+    border: 3px solid #ddd; /* Kenarlık */
+}
+
+.about-text {
+    flex: 1;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Header */
 header {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     font-size: 36px;
-}
-
-header p {
-    font-size: 18px;
-    margin-top: 5px;
 }
 
 header nav ul {
@@ -54,4 +67,148 @@ header nav ul li {
 
 header nav ul li a, header nav ul li button {
     color: #fff;
-    background
+    background-color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header nav ul li a:hover, header nav ul li button:hover {
+    background-color: #1e90ff;
+}
+
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    text-align: center;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+#skills {
+    margin-top: 50px;
+    padding: 50px 0;
+}
+
+.filter-tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tab-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tab:hover {
+    background-color: #ddd;
+}
+
+.tab.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
