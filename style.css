@@ -149,6 +149,7 @@ footer {
 button {
     cursor: pointer;
 }
+
 #skills {
     margin-top: 50px;
     padding: 50px 0;
@@ -187,17 +188,20 @@ button {
     color: white;
 }
 
+/* Tab-content başlangıçta gizli */
 .tab-content {
-
+    display: none;  /* Tüm içerikler başlangıçta gizli */
     padding: 20px;
     background-color: #f4f4f4;
     border-radius: 5px;
     width: 100%;
     max-width: 600px;
 }
+
+/* Gece modunda içerik */
 body.dark-mode .tab-content {
-    background-color: #1a1a1a;  /* Gece modunda koyu arka plan */
-    color: #f4f4f4;  /* Beyaz metin */
+    background-color: #1a1a1a; /* Koyu arka plan */
+    color: #f4f4f4; /* Beyaz metin */
 }
 
 /* Gece Modu Liste Elemanları */
@@ -229,14 +233,17 @@ body.dark-mode .tab-content p {
     color: #f4f4f4;
 }
 
+/* Tab-pane öğelerinin başlangıçta gizli olması */
 .tab-pane {
-    display: none;
+    display: none;  /* Başlangıçta tüm içerikler gizli */
 }
 
+/* Aktif olan tab içeriğini göster */
 .tab-pane.active {
-    display: block;
+    display: block;  /* Sadece aktif içerik görünsün */
 }
 
+/* Ul ve li stil */
 ul {
     padding: 0;
     list-style-type: none;
