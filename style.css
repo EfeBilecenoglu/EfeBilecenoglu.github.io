@@ -70,7 +70,7 @@ body.dark-mode .tab.active {
 
 /* Gece Modu İçin .tab-content */
 body.dark-mode .tab-content {
-    background-color: #333;  /* Koyu gri arka plan */
+    background-color: #1a1a1a;  /* Koyu gri arka plan */
     color: #f4f4f4;  /* Açık renk metin (beyaz) */
 }
 
