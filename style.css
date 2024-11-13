@@ -8,6 +8,12 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f4f4f4;
 }
 
 .container {
@@ -38,15 +44,18 @@ header nav ul li {
     margin: 0 15px;
 }
 
-header nav ul li a {
+header nav ul li a, header nav ul li button {
     color: #fff;
+    background-color: #333;
+    padding: 10px 20px;
     text-decoration: none;
+    border: none;
     font-weight: bold;
-    text-transform: uppercase;
+    cursor: pointer;
 }
 
-header nav ul li a:hover {
-    color: #1e90ff;
+header nav ul li a:hover, header nav ul li button:hover {
+    background-color: #1e90ff;
 }
 
 .section {
@@ -114,4 +123,8 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+}
+
+button {
+    cursor: pointer;
 }
