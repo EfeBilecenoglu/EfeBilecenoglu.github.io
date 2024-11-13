@@ -17,23 +17,31 @@ cvButton.addEventListener('click', () => {
     window.location.href = 'cv/Adınız_CV.pdf'; // CV dosyasının yolu
 });
 document.addEventListener("DOMContentLoaded", function() {
+    // Tablar ve içerikleri seçiyoruz
     const tabs = document.querySelectorAll('.tab');
     const tabPanes = document.querySelectorAll('.tab-pane');
     
+    // Her bir tab'a tıklanabilirlik ekliyoruz
     tabs.forEach(tab => {
         tab.addEventListener('click', function() {
-            // Aktif olan tüm tab'ları ve içerikleri temizle
+            // Aktif olan tüm tab'ları ve içerikleri temizliyoruz
             tabs.forEach(t => t.classList.remove('active'));
             tabPanes.forEach(pane => pane.classList.remove('active'));
 
-            // Aktif olan tab'ı ve içeriği ekle
+            // Aktif olan tab'ı ekliyoruz
             tab.classList.add('active');
-            const contentId = tab.id.split('-')[0] + '-content';  // tab id'sinden içerik id'sini çıkar
+
+            // Tab'ın data-tab özelliğini kullanarak içerik ID'sini alıyoruz
+            const contentId = tab.getAttribute('data-tab'); // data-tab'a göre içerik id'sini al
             document.getElementById(contentId).classList.add('active');
         });
     });
 
     // Sayfa yüklendiğinde varsayılan olarak "Languages" tab'ını göster
-    document.getElementById('languages-tab').classList.add('active');
-    document.getElementById('languages-content').classList.add('active');
+    const defaultTab = document.querySelector('.tab[data-tab="languages"]');
+    const defaultContent = document.getElementById('languages-content');
+    if (defaultTab && defaultContent) {
+        defaultTab.classList.add('active');
+        defaultContent.classList.add('active');
+    }
 });
