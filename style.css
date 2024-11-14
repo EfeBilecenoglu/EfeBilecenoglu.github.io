@@ -1,11 +1,9 @@
-/* Genel resetleme */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Temel stil */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -18,7 +16,33 @@ body.dark-mode {
     color: #f4f4f4;
 }
 
-/* Header */
+/* Hakkımda bölümü */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-photo img {
+    width: 200px;   /* Fotoğrafın genişliği */
+    height: 200px;  /* Fotoğrafın yüksekliği */
+    max-width: 100%; /* Fotoğrafın genişliğini sınırla */
+    max-height: 100%; /* Fotoğrafın yüksekliğini sınırla */
+    border-radius: 50%; /* Yuvarlak yapma */
+    object-fit: cover; /* Fotoğrafın düzgün şekilde yerleşmesi */
+    border: 3px solid #ddd; /* Kenarlık */
+}
+
+.about-text {
+    flex: 1;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 header {
     background-color: #333;
     color: #fff;
@@ -41,8 +65,7 @@ header nav ul li {
     margin: 0 15px;
 }
 
-header nav ul li a,
-header nav ul li button {
+header nav ul li a, header nav ul li button {
     color: #fff;
     background-color: #333;
     padding: 10px 20px;
@@ -52,12 +75,10 @@ header nav ul li button {
     cursor: pointer;
 }
 
-header nav ul li a:hover,
-header nav ul li button:hover {
+header nav ul li a:hover, header nav ul li button:hover {
     background-color: #1e90ff;
 }
 
-/* Hakkımda ve diğer bölümler */
 .section {
     padding: 60px 0;
     text-align: center;
@@ -68,7 +89,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Projeler */
 .projects {
     display: flex;
     justify-content: space-between;
@@ -97,7 +117,44 @@ h2 {
     text-decoration: underline;
 }
 
-/* Yetenekler ve Tablar */
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+#skills {
+    margin-top: 50px;
+    padding: 50px 0;
+}
+
 .filter-tabs {
     display: flex;
     flex-direction: column;
@@ -107,7 +164,7 @@ h2 {
 .tab-list {
     display: flex;
     justify-content: center;
-    list-style: none;
+    list-style-type: none;
     padding: 0;
     margin-bottom: 20px;
 }
@@ -133,6 +190,7 @@ h2 {
 
 /* Tab-content başlangıçta gizli */
 .tab-content {
+    
     padding: 20px;
     background-color: #f4f4f4;
     border-radius: 5px;
@@ -140,62 +198,36 @@ h2 {
     max-width: 600px;
 }
 
-.tab-pane {
-    display: none;
-}
-
-.tab-pane.active {
-    display: block;
-}
-
-/* Gece Modu */
-body.dark-mode {
-    background-color: #1a1a1a;
-    color: #f4f4f4;
-}
-
-body.dark-mode .tab {
-    background-color: #333;
-    color: #fff;
-}
-
-body.dark-mode .tab.active {
-    background-color: #007bff;
-    color: white;
-}
-
+/* Gece modunda içerik */
 body.dark-mode .tab-content {
-    background-color: #1a1a1a;
-    color: #f4f4f4;
-}
-
-/* CV İndir Butonu */
-button#cv-btn {
-    cursor: pointer;
+    background-color: #1a1a1a; /* Koyu arka plan */
+    color: black;
 }
 
 /* Gece Modu Liste Elemanları */
 body.dark-mode .tab-content ul li {
-    list-style-type: none;
-    background-color: #333;
-    color: #f4f4f4;
+    list-style-type: none; 
+    background-color: #333;  /* Liste öğelerinin arka planını koyu yap */
+    color: #f4f4f4;  /* Liste öğelerinin yazı rengi beyaz */
     padding: 10px;
     margin-bottom: 5px;
     border-radius: 5px;
 }
 
+/* Gece Modu Listelerde Hover Durumu */
 body.dark-mode .tab-content ul li:hover {
-    background-color: #555;
+    list-style-type: none;
+    background-color: #555;  /* Liste öğelerinin hover arka planı */
     cursor: pointer;
 }
 
 /* Linkler için Gece Modu */
 body.dark-mode .tab-content a {
-    color: #1e90ff;
+    color: #1e90ff;  /* Linkler mavi olacak */
 }
 
 body.dark-mode .tab-content a:hover {
-    color: #66b3ff;
+    color: #66b3ff;  /* Link hover rengini daha açık mavi yap */
 }
 
 /* Diğer metin içerikleri için gece modunda beyaz yazı */
@@ -203,9 +235,19 @@ body.dark-mode .tab-content p {
     color: #f4f4f4;
 }
 
-/* Tab içeriklerinin düzeni */
+/* Tab-pane öğelerinin başlangıçta gizli olması */
+.tab-pane {
+    display: none;  /* Başlangıçta tüm içerikler gizli */
+}
+
+/* Aktif olan tab içeriğini göster */
+.tab-pane.active {
+    display: block;  /* Sadece aktif içerik görünsün */
+}
+
+/* Ul ve li stil */
 ul {
-    list-style-type: none;
+    list-style-type: none; 
     padding: 0;
 }
 
