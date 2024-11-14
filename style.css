@@ -192,10 +192,7 @@ button {
     background-color: #ddd;
 }
 
-.tab.active {
-    background-color: #007bff;
-    color: white;
-}
+
 
 /* Tab-content başlangıçta gizli */
 .tab-content {
@@ -205,6 +202,10 @@ button {
     border-radius: 5px;
     width: 100%;
     max-width: 600px;
+}
+.tab.active {
+    background-color: #007bff;
+    color: white;
 }
 
 /* Gece modunda içerik */
