@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //Slide Show
 
-let slideIndex = 0; // İlk slayt başlasın
+let slideIndex = 1; // İlk slayt başlasın
         showSlides();
 
         // Show slides function
