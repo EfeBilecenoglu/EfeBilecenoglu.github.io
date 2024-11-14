@@ -207,6 +207,13 @@ button {
     background-color: #007bff;
     color: white;
 }
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
 
 /* Gece modunda içerik */
 body.dark-mode .tab-content {
