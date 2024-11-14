@@ -224,6 +224,7 @@ body.dark-mode .tab-content ul li:hover {
 
 /* Linkler için Gece Modu */
 body.dark-mode .tab-content a {
+    background-color: #1a1a1a;
     color: #1e90ff;  /* Linkler mavi olacak */
 }
 
