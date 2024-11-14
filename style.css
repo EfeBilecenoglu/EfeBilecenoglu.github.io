@@ -304,3 +304,73 @@ a i {
 a i:hover {
     transform: scale(1.2); /* Hoverda büyütme */
 }
+/* Yeni Proje Alanı */
+
+/* Slideshow Container */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+/* Slideshow Images */
+.mySlides {
+  display: none;
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Slideshow Text */
+.text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.text h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.text p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Previous and Next Buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  user-select: none;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 3px 0 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
