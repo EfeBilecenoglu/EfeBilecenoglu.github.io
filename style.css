@@ -246,6 +246,7 @@ body.dark-mode .tab-content p {
 
 /* Ul ve li stil */
 ul {
+    list-style-type: none; 
     padding: 0;
 }
 
