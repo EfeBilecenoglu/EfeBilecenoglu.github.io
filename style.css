@@ -201,7 +201,6 @@ button {
 /* Gece modunda içerik */
 body.dark-mode .tab-content {
     background-color: #1a1a1a; /* Koyu arka plan */
-    color: #f4f4f4; /* Beyaz metin */
 }
 
 /* Gece Modu Liste Elemanları */
