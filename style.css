@@ -20,7 +20,7 @@ body.dark-mode {
 .about-content {
     display: flex;
     align-items: flex-start; 
-    gap: 20px;
+    gap: 24px;
 }
 
 .profile-photo img {
