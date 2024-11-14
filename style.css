@@ -77,6 +77,8 @@ header nav ul {
     justify-content: center;
     margin-top: 20px;
     list-style: none;
+    align-items: center;     /* Dikeyde ortalamayı sağlar */
+    text-align: center;
 }
 
 header nav ul li {
