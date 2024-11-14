@@ -79,7 +79,7 @@ let slideIndex = 0; // İlk slayt başlasın
             // Otomatik geçiş için 2 saniye sonra bir sonraki slaytı göster
             slideIndex++;
 
-            setTimeout(showSlides, 3000); // 3 saniye
+            setTimeout(showSlides, 10000); // 10 saniye
         }
 
         // Next/Prev button control
