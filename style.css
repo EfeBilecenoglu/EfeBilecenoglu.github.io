@@ -73,6 +73,7 @@ header nav ul li a, header nav ul li button {
     border: none;
     font-weight: bold;
     cursor: pointer;
+    font-family: Arial, sans-serif;
 }
 
 header nav ul li a:hover, header nav ul li button:hover {
@@ -253,4 +254,10 @@ ul {
 
 ul li {
     margin-bottom: 10px;
+}
+#cv-btn, 
+#mode-toggle {
+    font-family: Arial, sans-serif;  /* Aynı font ailesi */
+    font-weight: bold;  /* Yeteneklerim başlığıyla uyumlu font kalınlığı */
+    font-size: 16px;  /* Dilerseniz boyutunu da uyarlayabilirsiniz */
 }
