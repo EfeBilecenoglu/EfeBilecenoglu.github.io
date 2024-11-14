@@ -289,3 +289,8 @@ ul li {
 #cv-btn:hover {
     background-color: #0056b3; /* Hover durumunda buton rengini değiştir */
 }
+a {
+    text-decoration: none; /* Linkin altını çizmesini kaldır */
+    display: inline-block; /* İkonu yatayda hizalamak için */
+    margin: 10px; /* Link etrafında boşluk */
+}
