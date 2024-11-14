@@ -297,7 +297,7 @@ a {
 }
 
 a i {
-    font-size: 8px;  /* İkonun boyutunu ayarlama */
+    font-size: 20px;  /* İkonun boyutunu ayarlama */
     color: #333;      /* GitHub'un klasik gri rengi */
     transition: color 0.3s ease, transform 0.3s ease;
 }
