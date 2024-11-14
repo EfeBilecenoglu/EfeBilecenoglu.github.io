@@ -218,7 +218,7 @@ body.dark-mode .tab:hover {
 
 body.dark-mode .tab.active {
     background-color: #007bff;
-    color:  #1e90ff; /* Linkler mavi olacak */
+    color:  #f4f4f4; /* Linkler mavi olacak */
 }
 body.dark-mode .tab-content {
     background-color: #1a1a1a; /* Koyu arka plan */
