@@ -319,7 +319,7 @@ a i:hover {
 }
 
 img {
-  width: 20%; /* Resimleri %20 oranında küçültüyoruz */
+  width: 33%; /* Resimleri %33 oranında küçültüyoruz */
   height: auto; /* Orantılı bir şekilde yükseklik ayarını yapar */
   margin: 0 auto; /* Resimleri yatayda ortalar */
   border-radius: 8px;
