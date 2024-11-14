@@ -56,24 +56,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //Slide Show
 
-let slideIndex = 0;
+let slideIndex = 0; // Başlangıçtaki slayt indexi
 
+// Slaytları gösterme işlevi
 function showSlides() {
-    let slides = document.getElementsByClassName("mySlides");
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    slides[slideIndex - 1].style.display = "block";  
-    setTimeout(showSlides, 5000); // 5 saniyede bir değişir
+  let slides = document.getElementsByClassName("mySlides");
+  
+  // Tüm slaytları gizle
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  
+  // Şu anki slaydı göster
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex - 1].style.display = "block";  
 }
 
+// Bir sonraki veya önceki slayda geçiş yapma
 function plusSlides(n) {
-    slideIndex += n;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    if (slideIndex < 1) {slideIndex = slides.length}
-    showSlides();
+  showSlides(slideIndex += n);
 }
 
-showSlides(); // Slideshow başlat
+// Otomatik slayt geçişi
+setInterval(showSlides, 10000); // 10 saniyede bir slayt değişir
