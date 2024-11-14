@@ -65,8 +65,7 @@ header nav ul li {
     margin: 0 15px;
 }
 
-header nav ul li a,
-header nav ul li button {
+header nav ul li a, header nav ul li button {
     color: #fff;
     background-color: #333;
     padding: 10px 20px;
@@ -74,11 +73,9 @@ header nav ul li button {
     border: none;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-header nav ul li a:hover,
-header nav ul li button:hover {
+header nav ul li a:hover, header nav ul li button:hover {
     background-color: #1e90ff;
 }
 
@@ -107,11 +104,6 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 10px 0;
     text-align: center;
-    transition: box-shadow 0.3s;
-}
-
-.project:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .project a {
@@ -141,7 +133,6 @@ form button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 form button:hover {
@@ -192,25 +183,19 @@ button {
     background-color: #ddd;
 }
 
-
-
-/* Tab-content başlangıçta gizli */
-.tab-content {
-  
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 600px;
-}
 .tab.active {
     background-color: #007bff;
     color: white;
 }
 
-
-.tab-pane.active {
-    display: block;
+/* Tab-content başlangıçta gizli */
+.tab-content {
+    display: none;  /* Tüm içerikler başlangıçta gizli */
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
 }
 
 /* Gece modunda içerik */
@@ -240,4 +225,30 @@ body.dark-mode .tab-content a {
 }
 
 body.dark-mode .tab-content a:hover {
-    color: #
+    color: #66b3ff;  /* Link hover rengini daha açık mavi yap */
+}
+
+/* Diğer metin içerikleri için gece modunda beyaz yazı */
+body.dark-mode .tab-content p {
+    color: #f4f4f4;
+}
+
+/* Tab-pane öğelerinin başlangıçta gizli olması */
+.tab-pane {
+    display: none;  /* Başlangıçta tüm içerikler gizli */
+}
+
+/* Aktif olan tab içeriğini göster */
+.tab-pane.active {
+    display: block;  /* Sadece aktif içerik görünsün */
+}
+
+/* Ul ve li stil */
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
