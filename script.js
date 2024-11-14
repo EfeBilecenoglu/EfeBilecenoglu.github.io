@@ -1,17 +1,27 @@
 // Gündüz / Gece Modu
-const modeToggleButton = document.getElementById('mode-toggle');
-const cvButton = document.getElementById('cv-btn');
 
-// Gece modunu değiştiren fonksiyon
-modeToggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    if (document.body.classList.contains('dark-mode')) {
-        modeToggleButton.textContent = 'Gündüz Modu';
+const modeToggle = document.getElementById('mode-toggle');
+const modeIcon = document.getElementById('mode-icon');
+const body = document.body;
+
+let isDarkMode = false;
+
+modeToggle.addEventListener('click', () => 
+    { isDarkMode = !isDarkMode;
+
+    if (isDarkMode) {
+        body.classList.add('dark-mode');
+        modeIcon.classList.remove('fa-sun');
+        modeIcon.classList.add('fa-moon');
+        modeToggle.innerHTML = '<i class="fas fa-moon"></i> Gece Modu';
     } else {
-        modeToggleButton.textContent = 'Gece Modu';
+        body.classList.remove('dark-mode');
+        modeIcon.classList.remove('fa-moon');
+        modeIcon.classList.add('fa-sun');
+        modeToggle.innerHTML = '<i class="fas fa-sun"></i> Gündüz Modu';
     }
 });
-
+const cvButton = document.getElementById('cv-btn');
 // CV indirme butonu
 cvButton.addEventListener('click', () => {
     window.location.href = 'CV_Ahmet_Efe_Bilecenoglu_GameCareer.pdf'; // CV dosyasının yolu
