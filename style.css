@@ -255,9 +255,25 @@ ul {
 ul li {
     margin-bottom: 10px;
 }
-#cv-btn, 
-#mode-toggle {
-    font-family: Arial, sans-serif;  /* Aynı font ailesi */
-    font-weight: bold;  /* Yeteneklerim başlığıyla uyumlu font kalınlığı */
-    font-size: 16px;  /* Dilerseniz boyutunu da uyarlayabilirsiniz */
+/* CV İndir Butonu Konumu */
+.button-container {
+    display: flex;
+    justify-content: center; /* Yatayda ortalama */
+    margin-top: 20px; /* Hakkımda metni ile buton arasına boşluk ekler */
+}
+
+#cv-btn {
+    font-family: Arial, sans-serif; /* Butonun yazı tipi */
+    font-weight: bold; /* Yazı kalınlık */
+    padding: 10px 20px; /* Buton içindeki boşluklar */
+    background-color: #1e90ff; /* Buton rengi */
+    color: #fff; /* Yazı rengi */
+    border: none; /* Kenarlık yok */
+    border-radius: 5px; /* Yuvarlak köşe */
+    cursor: pointer; /* Fare imlecini değiştir */
+    transition: background-color 0.3s; /* Hover efekti için geçiş */
+}
+
+#cv-btn:hover {
+    background-color: #0056b3; /* Hover durumunda buton rengini değiştir */
 }
