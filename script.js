@@ -43,10 +43,4 @@ document.addEventListener("DOMContentLoaded", function() {
         defaultContent.classList.add('active');
     }
 });
-//sayfa yeniledikçe başa sarsın
-<script>
-    window.onload = function() {
-        // Sayfa yüklendikten sonra sayfanın en üstüne kaydırma yap
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-</script>
+
