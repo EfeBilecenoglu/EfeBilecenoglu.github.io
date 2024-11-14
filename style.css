@@ -289,8 +289,20 @@ ul li {
 #cv-btn:hover {
     background-color: #0056b3; /* Hover durumunda buton rengini değiştir */
 }
+/* GitHub ikonu stilini ayarlama */
 a {
-    text-decoration: none; /* Linkin altını çizmesini kaldır */
-    display: inline-block; /* İkonu yatayda hizalamak için */
-    margin: 10px; /* Link etrafında boşluk */
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+a i {
+    font-size: 8px;  /* İkonun boyutunu ayarlama */
+    color: #333;      /* GitHub'un klasik gri rengi */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a i:hover {
+    color: #181717; /* GitHub'un koyu gri rengini hoverda kullan */
+    transform: scale(1.2); /* Hoverda büyütme */
 }
