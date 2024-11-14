@@ -19,7 +19,7 @@ body.dark-mode {
 /* Hakkımda bölümü */
 .about-content {
     display: flex;
-    align-items: center;
+    
     gap: 20px;
 }
 
