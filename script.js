@@ -31,7 +31,9 @@ document.addEventListener("DOMContentLoaded", function() {
             tab.classList.add('active');
             const contentId = tab.getAttribute('data-tab'); // Tab'ın 'data-tab' değerini alıyoruz
             const activeContent = document.getElementById(contentId); // İçeriği buluyoruz
-            activeContent.classList.add('active'); // Aktif içerik olarak ayarlıyoruz
+            if (activeContent) {
+                activeContent.classList.add('active'); // Aktif içerik olarak ayarlıyoruz
+            }
         });
     });
 
