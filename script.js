@@ -6,19 +6,19 @@ const body = document.body;
 
 let isDarkMode = false;
 
-modeToggle.addEventListener('click', () => 
-    { isDarkMode = !isDarkMode;
+modeToggle.addEventListener('click', () => {
+    isDarkMode = !isDarkMode;
 
     if (isDarkMode) {
+        // Gece modu: Hilal ay ikonu
         body.classList.add('dark-mode');
-        modeIcon.classList.remove('fa-sun');
-        modeIcon.classList.add('fa-moon');
-        modeToggle.innerHTML = '<i class="fas fa-moon"></i> Gece Modu';
+        modeIcon.classList.remove('fa-sun'); // Güneş ikonu kaldırılıyor
+        modeIcon.classList.add('fa-moon');   // Hilal ay ikonu ekleniyor
     } else {
+        // Gündüz modu: Güneş ikonu
         body.classList.remove('dark-mode');
-        modeIcon.classList.remove('fa-moon');
-        modeIcon.classList.add('fa-sun');
-        modeToggle.innerHTML = '<i class="fas fa-sun"></i> Gündüz Modu';
+        modeIcon.classList.remove('fa-moon'); // Ay ikonu kaldırılıyor
+        modeIcon.classList.add('fa-sun');     // Güneş ikonu ekleniyor
     }
 });
 const cvButton = document.getElementById('cv-btn');
