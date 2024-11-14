@@ -56,7 +56,7 @@ header h1 {
 
 header nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin-top: 20px;
     list-style: none;
 }
