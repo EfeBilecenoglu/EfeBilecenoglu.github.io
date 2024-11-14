@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //Slide Show
 
-let slideIndex = 1; // İlk slayt başlasın
+let slideIndex = 0; // İlk slayt başlasın
         showSlides();
 
         // Show slides function
@@ -66,6 +66,10 @@ let slideIndex = 1; // İlk slayt başlasın
             if (slideIndex > slides.length) {
         slideIndex = 0; // Döngüye girmesi için
     }
+            // Tüm slaytları gizle
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
 
 
             // Şu anki slaytı göster
