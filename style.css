@@ -2,10 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    position: relative;
-    z-index: 1 !important;
 }
-
 
 body {
     font-family: Arial, sans-serif;
@@ -202,7 +199,6 @@ button {
 }
 
 /* Gece modunda içerik */
-
 body.dark-mode .tab {
     padding: 10px 20px;
     margin: 0 10px;
