@@ -233,6 +233,7 @@ body.dark-mode .tab-content a:hover {
 
 /* Diğer metin içerikleri için gece modunda beyaz yazı */
 body.dark-mode .tab-content p {
+    background-color: #1a1a1a;
     color: #f4f4f4;
 }
 
