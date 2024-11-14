@@ -57,32 +57,37 @@ document.addEventListener("DOMContentLoaded", function() {
 //Slide Show
 
 let slideIndex = 0; // Başlangıçtaki slayt indexi
+let slideInterval; // Otomatik slayt geçişi için interval değişkeni
 
 // Slaytları gösterme işlevi
 function showSlides() {
-  let slides = document.getElementsByClassName("mySlides");
+    let slides = document.getElementsByClassName("mySlides");
+
+    // Eğer slayt index'i slayt sayısından büyükse sıfır yap
+    if (slideIndex >= slides.length) {
+        slideIndex = 0;
+    }
     
-    if (slideIndex > slides.length) {
-    slideIndex = 0;
-  // Tüm slaytları gizle
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
+    // Tüm slaytları gizle
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
 
-  // Sonraki slayda geç
-  slideIndex++;
+    // Geçerli slaydı göster
+    slides[slideIndex].style.display = "block";
 
-  // Geçerli slaydı göster
-  slides[slideIndex - 1].style.display = "block";
-    // Eğer slaytlar biterse, başa dön
-  
-  }
+    // Sonraki slayda geçiş
+    slideIndex++;
 }
 
 // Bir sonraki veya önceki slayda geçiş yapma
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+    slideIndex += n;
+    showSlides(); // Slaytları yeniden göster
+    resetAutoSlide(); // Zamanlayıcıyı sıfırla
 }
 
-// Otomatik slayt geçişi
-setInterval(showSlides, 10000); // 10 saniyede bir slayt değişir
+// Otomatik slayt geçişi (10 saniyede bir slayt değişir)
+function startAutoSlide() {
+    slideInterval = setInterval(showSlides, 10000); // 10 saniye aralıkla otomatik geçiş
+}
