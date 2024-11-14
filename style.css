@@ -197,17 +197,10 @@ button {
     width: 100%;
     max-width: 600px;
 }
-.section-divider {
-    border-top: 2px solid #333;  /* Çizginin rengi ve kalınlığı */
-    margin: 30px 0;  /* Çizgi ile başlık arasındaki boşluk */
-    position: relative;  /* Normal akışta kalması için */
-    z-index: 1;  /* Diğer öğelerin üzerinde olmasından kaçınmak için */
-}
+
 /* Gece modunda içerik */
 
-body.dark-mode .section-divider {
-    border-top: 2px solid #f4f4f4;  /* Gece modunda daha açık renk */
-}
+
 body.dark-mode .tab {
     padding: 10px 20px;
     margin: 0 10px;
