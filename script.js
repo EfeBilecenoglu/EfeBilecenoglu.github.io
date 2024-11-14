@@ -61,22 +61,16 @@ let slideIndex = 0; // Başlangıçtaki slayt indexi
 // Slaytları gösterme işlevi
 function showSlides() {
   let slides = document.getElementsByClassName("mySlides");
-
+  
   // Tüm slaytları gizle
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
-
-  // Sonraki slayda geç
-  slideIndex++;
   
-  // Eğer slaytlar biterse, başa dön
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-
-  // Geçerli slaydı göster
-  slides[slideIndex - 1].style.display = "block";
+  // Şu anki slaydı göster
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 0}    
+  slides[slideIndex - 1].style.display = "block";  
 }
 
 // Bir sonraki veya önceki slayda geçiş yapma
@@ -85,4 +79,4 @@ function plusSlides(n) {
 }
 
 // Otomatik slayt geçişi
-setInterval(showSlides, 10000); // 10 saniyede bir slayt değişir
+setInterval(showSlides, 10000); // 3 saniyede bir slayt değişir
