@@ -43,3 +43,11 @@ document.addEventListener("DOMContentLoaded", function() {
         defaultContent.classList.add('active');
     }
 });
+//sayfa yeniledikçe başa sarsın
+<script>
+    window.onload = function() {
+        // Sayfa yüklendikten sonra portföy kısmına kaydırma yap
+        const projectsSection = document.getElementById('container');
+        projectsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+</script>
