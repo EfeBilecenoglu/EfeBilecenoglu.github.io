@@ -20,21 +20,14 @@ body.dark-mode {
     position: fixed;  /* Sayfada sabit kalmasını sağlar */
     top: 20px;         /* Üstten 20px mesafe */
     right: 20px;       /* Sağdan 20px mesafe */
-    background-color: #1e90ff; /* Buton rengi */
+    background-color: transparent; /* Buton rengi */
     color: white;      /* Yazı rengi beyaz */
-    padding: 10px 20px; /* Buton içindeki boşluklar */
-    border: none;      /* Kenarlık yok */
-    border-radius: 5px; /* Yuvarlak köşe */
     cursor: pointer;   /* Fare imlecini değiştirir */
-    font-weight: bold;  /* Yazıyı kalın yapar */
-    font-size: 16px;    /* Yazı boyutunu belirler */
-    transition: background-color 0.3s; /* Hover efekti için geçiş */
+    font-size: 20px;    /* Yazı boyutunu belirler */
     z-index: 1000;      /* Butonun sayfadaki diğer öğelerin üstünde görünmesini sağlar */
 }
 
-#mode-toggle:hover {
-    background-color: #0056b3; /* Hover durumunda buton rengini değiştirir */
-}
+
 /* Hakkımda bölümü */
 .about-content {
     display: flex;
