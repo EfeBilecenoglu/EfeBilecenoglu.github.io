@@ -34,6 +34,7 @@ body.dark-mode {
 }
 
 .about-text {
+    text-align: left;
     flex: 1;
 }
 
