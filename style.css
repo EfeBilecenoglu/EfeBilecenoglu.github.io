@@ -319,7 +319,9 @@ a i:hover {
 }
 
 img {
-  width: 100%;
+  width: 50%; /* Resimleri %50 oranında küçültüyoruz */
+  height: auto; /* Orantılı bir şekilde yükseklik ayarını yapar */
+  margin: 0 auto; /* Resimleri yatayda ortalar */
   border-radius: 8px;
 }
 
