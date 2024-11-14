@@ -14,7 +14,7 @@ modeToggleButton.addEventListener('click', () => {
 
 // CV indirme butonu
 cvButton.addEventListener('click', () => {
-    window.location.href = 'cv/Adınız_CV.pdf'; // CV dosyasının yolu
+    window.location.href = 'cv/CV_Ahmet_Efe_Bilecenoglu_GameCareer.pdf'; // CV dosyasının yolu
 });
 document.addEventListener("DOMContentLoaded", function() {
     const tabs = document.querySelectorAll('.tab'); // Tab'ları seçiyoruz
