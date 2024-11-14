@@ -297,12 +297,10 @@ a {
 }
 
 a i {
-    font-size: 20px;  /* İkonun boyutunu ayarlama */
-    color: #333;      /* GitHub'un klasik gri rengi */
+    font-size: 24px;  /* İkonun boyutunu ayarlama */
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 a i:hover {
-    color: #181717; /* GitHub'un koyu gri rengini hoverda kullan */
     transform: scale(1.2); /* Hoverda büyütme */
 }
