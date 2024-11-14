@@ -208,7 +208,7 @@ body.dark-mode .tab-content {
 /* Gece Modu Liste Elemanları */
 body.dark-mode .tab-content ul li {
     list-style-type: none; 
-    background-color: #333;  /* Liste öğelerinin arka planını koyu yap */
+    background-color: #1a1a1a;  /* Liste öğelerinin arka planını koyu yap */
     color: #f4f4f4;  /* Liste öğelerinin yazı rengi beyaz */
     padding: 10px;
     margin-bottom: 5px;
