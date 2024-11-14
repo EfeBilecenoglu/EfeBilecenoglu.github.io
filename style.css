@@ -190,7 +190,7 @@ button {
 
 /* Tab-content başlangıçta gizli */
 .tab-content {
-    display: none;  /* Tüm içerikler başlangıçta gizli */
+    
     padding: 20px;
     background-color: #f4f4f4;
     border-radius: 5px;
