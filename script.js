@@ -79,12 +79,12 @@ function showSlides() {
 }
 // Bir sonraki veya önceki slayda geçiş yapma
 function plusSlides(n) {
-    slideIndex -= 1;
+    
     slideIndex += n;
     
     showSlides(); // Slaytları yeniden göster
     resetAutoSlide(); // Zamanlayıcıyı sıfırla
-     
+    slideIndex -= 1;
 }
 //Bir sonraki veya önceki slayda geçiş yapma
 function startAutoSlide() {
