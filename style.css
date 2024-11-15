@@ -376,3 +376,23 @@ img {
 .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+/* Ziyaretçi sayacı için stil */
+.visitor-counter {
+  display: inline-block;  /* Liste öğesini yatayda hizalamak için */
+  padding: 10px;          /* İç boşluk ekleyelim */
+  border-radius: 8px;     /* Köşeleri yuvarlayalım */
+  background-color: #f0f0f0;  /* Arka plan rengi */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge ekleyelim */
+  margin: 5px;            /* Liste öğeleri arasında boşluk */
+  text-align: center;     /* Resmi ortalayalım */
+  transition: transform 0.3s ease;  /* Hover etkisi için animasyon */
+}
+
+.visitor-counter img {
+  width: 120px; /* Görselin genişliğini ayarlayalım */
+  height: auto; /* Yüksekliği orantılı tutalım */
+}
+
+.visitor-counter:hover {
+  transform: scale(1.1); /* Hover efekti: öğe büyür */
+}
