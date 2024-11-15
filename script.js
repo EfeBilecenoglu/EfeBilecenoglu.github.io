@@ -59,16 +59,12 @@ let slides = document.getElementsByClassName("mySlides");
 let slideIndex = 0; // Başlangıçtaki slayt indexi
 let slideInterval; // Otomatik slayt geçişi için interval değişkeni
 
-  // Şu anki slaydı göster
-  slides[slideIndex].style.display = "block";
 
 function showSlides() {
   // Tüm slaytları gizle
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }  
- let slides = document.getElementsByClassName("mySlides");
-  // Şu anki slaydı göster
   slides[slideIndex].style.display = "block";
     
 }
@@ -96,3 +92,8 @@ function resetAutoSlide() {
     clearInterval(slideInterval); // Mevcut zamanlayıcıyı temizle
     startAutoSlide(); // Yeni zamanlayıcıyı başlat
 }
+window.onlad= function()
+    {
+        showSlides();
+        startAutoSlide();
+    }
