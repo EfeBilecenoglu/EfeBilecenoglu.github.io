@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 let slideIndex = 0; // Başlangıçtaki slayt indexi
 let slideInterval; // Otomatik slayt geçişi için interval değişkeni
+showslides();
 // Slaytları gösterme işlevi
 function showSlides() {
   
