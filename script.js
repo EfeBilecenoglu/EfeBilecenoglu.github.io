@@ -61,13 +61,13 @@ let slideInterval; // Otomatik slayt geçişi için interval değişkeni
 // Slaytları gösterme işlevi
 function showSlides() {
   let slides = document.getElementsByClassName("mySlides");
-  if(sliceIndex < 0)
+  if(slideIndex < 0)
   {
-      sliceIndex=2;
+      slideIndex=2;
   }
-    if(sliceIndex > 2)
+    if(slideIndex > 2)
   {
-      sliceIndex=0;
+      slideIndex=0;
   }
     
   // Tüm slaytları gizle
