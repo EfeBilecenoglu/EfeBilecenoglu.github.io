@@ -61,6 +61,14 @@ let slideInterval; // Otomatik slayt geçişi için interval değişkeni
 
 
 function showSlides() {
+    if(slideIndex < 0)
+  {
+      slideIndex=2;
+  }
+    if(slideIndex > 2)
+  {
+      slideIndex=0;
+  }
   // Tüm slaytları gizle
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
@@ -71,14 +79,7 @@ function showSlides() {
 // Bir sonraki veya önceki slayda geçiş yapma
 function plusSlides(n) {
     slideIndex += n;
-    if(slideIndex < 0)
-  {
-      slideIndex=2;
-  }
-    if(slideIndex > 2)
-  {
-      slideIndex=0;
-  }
+    
     showSlides(); // Slaytları yeniden göster
     resetAutoSlide(); // Zamanlayıcıyı sıfırla
     
@@ -90,9 +91,8 @@ function startAutoSlide() {
 }
 function resetAutoSlide() {
     clearInterval(slideInterval); // Mevcut zamanlayıcıyı temizle
-    startAutoSlide(); // Yeni zamanlayıcıyı başlat
 }
-window.onlad= function()
+window.onload= function()
     {
         showSlides();
         startAutoSlide();
