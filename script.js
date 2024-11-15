@@ -98,5 +98,6 @@ function resetAutoSlide() {
 }
 window.onload= function()
     {
+        window.scroolTo(0,0);
         startAutoSlide();
     }
