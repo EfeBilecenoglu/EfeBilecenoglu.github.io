@@ -74,10 +74,12 @@ function showSlides() {
     slides[i].style.display = "none";  
   }  
   slides[slideIndex].style.display = "block";
-    
+  startAutoSlide();
+  slideIndex += 1;
 }
 // Bir sonraki veya önceki slayda geçiş yapma
 function plusSlides(n) {
+    slideIndex -= 1;
     slideIndex += n;
     
     showSlides(); // Slaytları yeniden göster
@@ -87,7 +89,7 @@ function plusSlides(n) {
 // Bir sonraki veya önceki slayda geçiş yapma
 function startAutoSlide() {
     slideInterval = setInterval(showSlides, 10000); // 10 saniye aralıkla otomatik geçiş
-    slideIndex += 1;
+    
 }
 function resetAutoSlide() {
     clearInterval(slideInterval); // Mevcut zamanlayıcıyı temizle
