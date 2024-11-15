@@ -74,19 +74,21 @@ function showSlides() {
     slides[i].style.display = "none";  
   }  
   slides[slideIndex].style.display = "block";
+  slideIndex += 1;
   
 }
 // Bir sonraki veya önceki slayda geçiş yapma
-function plusSlides(n) {   
+function plusSlides(n) {
+    resetAutoSlide(); // Zamanlayıcıyı sıfırla
     slideIndex += n;
     showSlides(); // Slaytları yeniden göster
-    resetAutoSlide(); // Zamanlayıcıyı sıfırla
+    
 }
 //Bir sonraki veya önceki slayda geçiş yapma
 function startAutoSlide() {
     slideInterval = setInterval(showSlides, 10000); // 10 saniye aralıkla otomatik geçiş
     showSlides();
-    slideIndex += 1;
+    
 }
 function resetAutoSlide() {
     clearInterval(slideInterval); // Mevcut zamanlayıcıyı temizle
@@ -95,8 +97,5 @@ function resetAutoSlide() {
 }
 window.onload= function()
     {
-        
-        showSlides();
-        slideIndex -=1;
         startAutoSlide();
     }
