@@ -55,15 +55,14 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 //Slide Show
-
+let slides = document.getElementsByClassName("mySlides");
 let slideIndex = 0; // Başlangıçtaki slayt indexi
 let slideInterval; // Otomatik slayt geçişi için interval değişkeni
-showslides();
-// Slaytları gösterme işlevi
+
+  // Şu anki slaydı göster
+  slides[slideIndex].style.display = "block";
+
 function showSlides() {
-  
-  
-    
   // Tüm slaytları gizle
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
