@@ -63,11 +63,11 @@ let slideInterval; // Otomatik slayt geçişi için interval değişkeni
 function showSlides() {
     if(slideIndex < 0)
   {
-      slideIndex=2;
+      slideIndex = 2;
   }
     if(slideIndex > 2)
   {
-      slideIndex=0;
+      slideIndex = 0;
   }
   // Tüm slaytları gizle
   for (let i = 0; i < slides.length; i++) {
@@ -81,7 +81,6 @@ function showSlides() {
 function plusSlides(n) {
     resetAutoSlide(); // Zamanlayıcıyı sıfırla
     slideIndex += n;
-    showSlides(); // Slaytları yeniden göster
     startAutoSlide();
     
 }
