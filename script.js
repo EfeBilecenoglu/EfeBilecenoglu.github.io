@@ -58,12 +58,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
 let slideIndex = 0; // Başlangıçtaki slayt indexi
 let slideInterval; // Otomatik slayt geçişi için interval değişkeni
-let slides = document.getElementsByClassName("mySlides");
-slides[slideIndex].style.display = "block"; 
 // Slaytları gösterme işlevi
 function showSlides() {
-  let slides = document.getElementsByClassName("mySlides");
-  if(slideIndex < 0)
+  
+  
+    
+  // Tüm slaytları gizle
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }  
+ let slides = document.getElementsByClassName("mySlides");
+  // Şu anki slaydı göster
+  slides[slideIndex].style.display = "block";
+    
+}
+// Bir sonraki veya önceki slayda geçiş yapma
+function plusSlides(n) {
+    slideIndex += n;
+    if(slideIndex < 0)
   {
       slideIndex=2;
   }
@@ -71,21 +83,9 @@ function showSlides() {
   {
       slideIndex=0;
   }
-    
-  // Tüm slaytları gizle
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }  
-  // Şu anki slaydı göster
-
-  slides[slideIndex].style.display = "block";  
-   
-}
-// Bir sonraki veya önceki slayda geçiş yapma
-function plusSlides(n) {
-    slideIndex += n;
     showSlides(); // Slaytları yeniden göster
     resetAutoSlide(); // Zamanlayıcıyı sıfırla
+    
 }
 // Bir sonraki veya önceki slayda geçiş yapma
 function startAutoSlide() {
