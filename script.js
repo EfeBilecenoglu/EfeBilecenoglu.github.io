@@ -87,12 +87,14 @@ function plusSlides(n) {
 //Bir sonraki veya önceki slayda geçiş yapma
 function startAutoSlide() {
     slideInterval = setInterval(showSlides, 10000); // 10 saniye aralıkla otomatik geçiş
-    slideIndex += 1;
     showSlides();
+    slideIndex += 1;
+    
     
 }
 function resetAutoSlide() {
     clearInterval(slideInterval); // Mevcut zamanlayıcıyı temizle
+    slideIndex -= 1;
 }
 window.onload= function()
     {
