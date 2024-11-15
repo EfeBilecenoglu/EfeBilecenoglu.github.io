@@ -92,9 +92,11 @@ function startAutoSlide() {
 }
 function resetAutoSlide() {
     clearInterval(slideInterval); // Mevcut zamanlayıcıyı temizle
+    startAutoSlide();
 }
 window.onload= function()
     {
         showSlides();
+        slideIndex -= 1;
         startAutoSlide();
     }
