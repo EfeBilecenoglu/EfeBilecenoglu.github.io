@@ -376,7 +376,7 @@ img {
 .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-/* Ziyaretçi sayacı için stil */
+/* Ziyaretçi sayacı için stil  */
 .visitor-counter {
   display: inline-block;  /* Liste öğesini yatayda hizalamak için */
   padding: 10px;          /* İç boşluk ekleyelim */
