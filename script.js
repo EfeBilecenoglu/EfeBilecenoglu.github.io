@@ -73,8 +73,7 @@ function showSlides() {
   // Tüm slaytları gizle
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
-  }
-  
+  }  
   // Şu anki slaydı göster
 
   slides[slideIndex].style.display = "block";  
@@ -82,8 +81,8 @@ function showSlides() {
 }
 // Bir sonraki veya önceki slayda geçiş yapma
 function plusSlides(n) {
-    slideIndex += n;
     showSlides(); // Slaytları yeniden göster
+    slideIndex += n;
     resetAutoSlide(); // Zamanlayıcıyı sıfırla
 }
 // Bir sonraki veya önceki slayda geçiş yapma
