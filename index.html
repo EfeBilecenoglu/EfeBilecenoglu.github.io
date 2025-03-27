@@ -85,6 +85,8 @@
                 position: relative;
                 max-width: 800px;
                 margin: auto;
+                overflow: hidden;
+                border-radius: 12px;
             }
 
             .mySlides {
@@ -93,28 +95,32 @@
 
                 .mySlides img {
                     width: 100%;
+                    height: auto;
                     display: block;
                 }
 
             .text {
                 position: absolute;
                 bottom: 0;
+                left: 0;
                 width: 100%;
-                text-align: center;
                 background: rgba(0, 0, 0, 0.6);
                 color: white;
-                padding: 8px 16px;
-                box-sizing: border-box;
-                overflow: hidden;
+                padding: 10px;
+                text-align: center;
                 font-size: 14px;
+                line-height: 1.4;
+                box-sizing: border-box;
             }
+
+                .text h3 {
+                    margin: 0 0 5px 0;
+                    font-size: 16px;
+                }
+
                 .text p {
-                    margin: 5px 0 0 0;
-                    line-height: 1.4;
-                    word-wrap: break-word;
-                    max-width: 90%;
-                    margin-left: auto;
-                    margin-right: auto;
+                    margin: 0;
+                    padding: 0;
                 }
 
             .fade {
@@ -136,20 +142,16 @@
                 cursor: pointer;
                 position: absolute;
                 top: 50%;
+                transform: translateY(-50%);
                 width: auto;
                 padding: 16px;
-                margin-top: -22px;
                 color: white;
                 font-weight: bold;
                 font-size: 18px;
-                transition: 0.3s;
                 user-select: none;
-                background-color: rgba(0,0,0,0.3);
+                background-color: rgba(0, 0, 0, 0.3);
+                border-radius: 0 5px 5px 0;
             }
-
-                .prev:hover, .next:hover {
-                    background-color: rgba(0,0,0,0.6);
-                }
 
             .prev {
                 left: 0;
@@ -157,7 +159,12 @@
 
             .next {
                 right: 0;
+                border-radius: 5px 0 0 5px;
             }
+
+                .prev:hover, .next:hover {
+                    background-color: rgba(0, 0, 0, 0.6);
+                }
 
             h2 {
                 text-align: center;
@@ -168,6 +175,7 @@
         <div class="container">
             <h2>Projects</h2>
             <div class="slideshow-container">
+
                 <!-- Slideshow Images -->
                 <div class="mySlides fade">
                     <img src="E1.PNG" alt="Main Menu">
@@ -196,9 +204,11 @@
                 <!-- Previous and Next buttons -->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
             </div>
         </div>
     </section>
+
 
 
     <section id="skills" class="section">
