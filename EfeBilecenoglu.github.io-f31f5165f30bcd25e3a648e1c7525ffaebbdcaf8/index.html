@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHMET EFE BILECENOGLU</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Ekleniyor -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>AHMET EFE BILECENOGLU</h1>
+            <p>Game Developer | Programmer | Electrical Electronic Engineer</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li>  <button id="mode-toggle"> <i id="mode-icon" class="fas fa-sun"></i> </button></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About me</h2>
+        <div class="about-content">
+            <!-- Fotoğraf kısmı -->
+            <div class="profile-photo">
+                <img src="profile-photo.jpeg" alt="Profil Fotoğrafı">
+                <ul>
+                    <a href="https://www.linkedin.com/in/ahmet-efe-bilecenoğlu" target="_blank">    <i id="mode-icon" class="fab fa-linkedin"></i> 
+                </a>
+                    <a href="https://github.com/EfeBilecenoglu" target="_blank">    <i id="mode-icon" class="fab fa-github"></i> 
+                </a>
+                    <a href="https://steamcommunity.com/id/katilkarton" target="_blank">    <i class="fab fa-steam"></i> 
+                </a>
+                    
+                </ul>
+                <ul>
+                   <li class="visitor-counter"> <img src="https://visitor-badge.laobi.icu/badge?page_id=efebilecenoglu.efebilecenoglu.github.io" alt="visitors" /></li> 
+                </ul>
+            </div>
+            <!-- Hakkımda metni kısmı -->
+            <div class="about-text">
+                <p>Hi! I’m Efe. After graduating as an Electrical & Electronics Engineer and working (and still working) for 8 years in the Defense Industry, I decided to take a big step toward a new career that I can truly enjoy. My primary goal is to learn everything about this vast gaming industry as quickly as possible. Luckily, I’m a fast learner. At this stage, I am:</p>
+                
+                <ul>
+                    <li> </li>
+                    <li><i id="mode-icon" class="fas fa-star"></i> Creating 3D mini mobile games by using UNITY. </li>
+                    <li><i id="mode-icon" class="fas fa-star"></i> a Prompt engineer, i like to spending time with text-to-Image tools. (For my creations visit: <a class="underline-link" href="https://www.instagram.com/designyourfuture.ai/" target="_blank">designyourfuture </a>)</li>
+                    <li><i id="mode-icon" class="fas fa-star"></i> a Jira trainer in a company of 15 thousand people. <strong>This is why i' m master at Jira and Confluence Tools</strong>.</li>
+                </ul>
+                
+            </div>
+        </div>
+          <div class="button-container">
+        <button id="cv-btn">DOWNLOAD CV</button>
+    </div>
+    </div>
+    </section>
+
+<section id="projects" class="section">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="slideshow-container">
+            <!-- Slideshow Images -->
+            <div class="mySlides fade">
+                <img src="zzroad.jpg" alt="ZigZag Road" style="width:100%">
+                <div class="text">
+                    <h3>Bami The Bird</h3>
+                    <p>Designed to be a unique UNITY 3D game. Arcade Style Bird game enriched with terrain, audio and animations. </p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="fruitninja.jpg" alt="Fruit Ninja" style="width:100%">
+                <div class="text">
+                    <h3>Bami The Bird</h3>
+                    <p>It is an endless flying game whose goal is to collect gems and get high scores.</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="fruitninja.jpg" alt="Fruit Ninja" style="width:100%">
+                <div class="text">
+                    <h3>Leaderboard & Player Data Systems</h3>
+                    <p>Game has UNITY Leaderboard. Players names collected via Unity Cloud Save System. </p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="birdgame.jpg" alt="BirdWay" style="width:100%">
+                <div class="text">
+                    <h3>Advertising System</h3>
+                    <p>Using UNITY LevelPlay system.</p>
+                </div>
+            </div>
+
+            <!-- Previous and Next buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="section">
+    <div class="container">
+        <h2>Skills</h2>
+
+        <!-- Filter Tabs -->
+       <div class="filter-tabs">
+            <ul class="tab-list">
+                <li class="tab active" id="languages-tab" data-tab="languages-content">Languages</li>
+                <li class="tab" id="tools-tab" data-tab="tools-content">Tools</li>
+                <li class="tab" id="databases-tab" data-tab="databases-content">Databases</li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="languages-content">
+                    <ul>
+                        <li>C#</li>
+                        <li>Python</li>
+                        <li>JQL</li>
+                        <li>SQL</li>
+                        <li>T-SQL</li>
+                        <li>LINQ</li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="tools-content">
+                    <ul>
+                        <li>Unity</li>
+                        <li>Microsoft Visual Studio</li>
+                        <li>JIRA</li>
+                        <li>Confluence</li>
+                        <li>GitHub</li>
+                        <li>Tortoise SVN</li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="databases-content">
+                    <ul>
+                        <li>MSSQL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+<footer>
+        <div class="container">
+            <p>&copy; 2024 Ahmet Efe Bilecenoglu. All contents of this site are protected by copyright.</p>
+        </div>
+    </footer>
